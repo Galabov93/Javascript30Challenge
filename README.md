@@ -22,4 +22,6 @@ Day 3 - Woah! CSS Variables
         - Using :root as a selector is a good practice because we have collect all our variables in one place and thus making our code easier for maintenance
         - Use dashes or underscope for naming convention as CSS Variables are case sensitive and camel case can be hard to spot when debugging css code
         
+Day 4 - JavaScript Array Cardio Practice
+        1) It was a good practice to remind how the some of the Array Manipulation methods for ES6 are applied. More particularly I liked the exrcise with the sort() function and the last one with the reduce() in which I used the object to store the data.
 
