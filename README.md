@@ -24,4 +24,8 @@ Day 3 - Woah! CSS Variables
         
 Day 4 - JavaScript Array Cardio Practice
         1) It was a good practice to remind how the some of the Array Manipulation methods for ES6 are applied. More particularly I liked the exrcise with the sort() function and the last one with the reduce() in which I used the object to store the data.
+        
+Day 5 - Flexbox image gallery
+        1) Very good exercise for showing how the Flexbox CSS functionality works
+        2) The JS part was relatively simple - using an event lister for a click event
 
