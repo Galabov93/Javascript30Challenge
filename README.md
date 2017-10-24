@@ -4,12 +4,11 @@
 What I learned from the 30 day challenge.
 
 Day 1 - Javascript Drum Kit:
-    1) How to use the <audio> tag in HTML and how to play it in JS
-    2) How to cathc a 'transitionend' event and made me research the transition events
-  
+    1) How to use the <audio> tag in HTML and how to play it with JS
+    2) How to catch a 'transitionend' even, which was cool and made me research the transition events as a whole.
   
 Day 2 - CSS JS Clock:
-    1)  Using the CSS transform and transition properties
+    1) Using the CSS transform and transition properties
     2) Using the 'rotate(Xdeg)' function in JS
     
     
@@ -28,4 +27,10 @@ Day 4 - JavaScript Array Cardio Practice
 Day 5 - Flexbox image gallery
         1) Very good exercise for showing how the Flexbox CSS functionality works
         2) The JS part was relatively simple - using an event lister for a click event
+        
+Day 6 - Ajax Type Ahead with fetch()
+        1) Using the browser fetch() function go GET Api response - it returns a promise. Then we can manipulate the data with .then() function which works with the data after the api call with fetch() has finished
+        2) Using JS regex for matching text with RegExp object and the function match(regex)
+        3) Appending html with template literals and innerHTML
+        4) Using the input event to trigger when there is an input in a box
 
