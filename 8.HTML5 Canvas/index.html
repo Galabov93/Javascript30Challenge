@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Canvas</title>
+</head>
+<body>
+<canvas id="draw" width="800" height="800"></canvas>
+<script>
+const canvas = document.querySelector('#draw')
+
+const context = canvas.getContext('2d')
+canvas.width = window.innerWidth
+canvas.height = window.innerHeight
+
+context.lineJoin = 'round'
+context.lineCap = 'round'
+
+let isDrawing = false
+let lastX = 0
+let lastY = 0
+
+console.log(canvas)
+
+	let hue = 0;
+function draw(e){
+	if(!isDrawing) return //stop the event from running when the mouse is not down
+
+	context.strokeStyle = `hsl(${hue}, 100%, 50%)`; //hsl is a function. HSL stands for hue, saturation, and lightness
+	context.beginPath();
+	context.moveTo(lastX, lastY);
+	context.lineTo(e.offsetX, e.offsetY);
+	context.stroke();
+	context.lineWidth = 85;
+
+	lastX = e.offsetX;
+	lastY = e.offsetY;
+	// [lastX,lastY] = [e.offsetX, e.offsetY]
+	hue++;
+
+
+}
+
+canvas.addEventListener('mousedown', (e) => {
+	isDrawing = true
+	lastX = e.offsetX;
+	lastY = e.offsetY;
+})
+
+canvas.addEventListener('mousemove',draw)
+canvas.addEventListener('mouseup', () => isDrawing = false)
+canvas.addEventListener('mouseout', () => isDrawing = false)
+
+
+</script>
+
+<style>
+  html, body {
+    margin:0;
+  }
+</style>
+
+</body>
+</html>
